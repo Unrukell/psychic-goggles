@@ -1,8 +1,5 @@
 name: repi
-on: 
-  push:
-  schedule:
-    - cron: '* */6 * * *'
+on: [push]
     
 env:
   RUBY_VERSION: '2.6'
